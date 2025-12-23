@@ -1,0 +1,74 @@
+
+
+
+1 ) .  POST       
+                       - >  url :-  http://localhost:8080/books
+                       Headers  :-    Key  - >  content-type
+                                      Value - > application/json
+
+
+                      _  >  Body  -  Raw  - Json   -       {
+                                                               "title": "Java Basics",
+                                                               "author": "Jane Smith",
+                                                               "price": 300,
+                                                               "publishedDate": "2023-11-15"
+                                                           }
+
+Answer :- 
+
+
+ {
+    "id": 1,
+    "title": "Java Basics",
+    "author": "Jane Smith",
+    "price": 300,
+    "publishedDate": "2023-11-15"
+}
+
+
+
+
+
+2  ) .   GET  :-   
+
+                          - >  url :-  http://localhost:8080/books
+                       Headers  :-    Key  - >  content-type
+                                      Value - > application/json
+
+
+                      _  >  Body  -  Raw  - Json   -    
+
+
+
+Answer  :-  
+
+[
+    {
+        "id": 1,
+        "title": "Java Basics",
+        "author": "Jane Smith",
+        "price": 300,
+        "publishedDate": "2023-11-15"
+    }
+]
+
+
+
+
+
+3 )  .  DELETE  :-  
+
+
+
+                          - >  url :-  http://localhost:8080/books/2
+                       Headers  :-    Key  - >  content-type
+                                      Value - > application/json
+
+
+                      _  >  Body  -  Raw  - Json   -    
+
+
+Answer  :-  
+
+
+Book deleted successfully
